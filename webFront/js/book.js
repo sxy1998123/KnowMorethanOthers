@@ -12,7 +12,7 @@ $(function(){
 				runNext(pageNum);
 			pageNum++;
 			};
-			console.log(pageNum);					
+			console.log(pageNum);			
 	});
 
 	function runNext(index){
@@ -30,7 +30,7 @@ $(function(){
 			};
 			element.children('div').css('z-index',2+2*index);
 			element.children('img').css('z-index',3+2*index);		
-		},1000);
+		},250);
 	}
 
 	$('.lastBtn').bind('click',function(){
@@ -54,6 +54,6 @@ $(function(){
 			element.css('z-index',7-2*index);
 			element.children('div').css('z-index',7-2*index);
 			element.children('img').css('z-index',6-2*index);		
-		},1000);
+		},250);
 	}
 });

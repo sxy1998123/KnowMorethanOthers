@@ -1,0 +1,74 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	color: #333;
+	font-family: "Microsoft YaHei";
+}
+.bookBox{
+	width: 1000px;
+	height: 500px;
+	position: relative;			
+	margin: 30px auto;
+	-webkit-perspective-origin: 50% 60%;
+	perspective-origin: 50% 60%;
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
+	background-size: 100% 100%;
+	/* background: #0099cc; */
+}
+body{
+	background: url(../img/backgroundPAGE.jpg);
+	background-size: 100% 100%;
+}
+#knowledge{
+	width: 100%;
+	position: relative;
+	padding: 40px 0px 127px 0px;
+}
+#cover{
+	width: 50%;
+	height: 100%;
+	float: right;
+    /*   此处自移动50% */
+	transform: translateX(-50%);
+	background:url(../img/bookCover.jpg);
+	background-size: 100% 100%;
+	transition: all linear 0.5s;
+	cursor: pointer;
+}
+.bookPage{
+	width: 100%;
+	height: 100%;
+	top: 0;		
+	transform-style: preserve-3d;			
+	transition: all linear 10s;
+	background: url(../img/bookBg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.Leftpage{
+	width: 50%;
+	height: 100%;
+	float:left;
+}
+.Leftpage img{
+	position: absolute;
+	top: 24px;
+	left: 35px;	
+	display: inline-block;
+	width: 450px;	
+}
+.Rightpage{
+	position: relative;
+	float:right;
+    width: 50%;
+	height: 100%;
+}
+.SubmitArea{
+	position: absolute;
+	top: 24px;
+	left: 25px;	
+	display: inline-block;
+	width: 450px;
+	height: 450px;
+}

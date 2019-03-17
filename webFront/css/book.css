@@ -75,11 +75,11 @@ body{
 	-ms-transform-style: preserve-3d;			
 	-o-transform-style: preserve-3d;			
 	transform-style: preserve-3d;			
-	-webkit-transition: all linear 2s;
-	-moz-transition: all linear 2s;
-	-ms-transition: all linear 2s;
-	-o-transition: all linear 2s;
-	transition: all linear 2s;
+	-webkit-transition: all linear 0.5s;
+	-moz-transition: all linear 0.5s;
+	-ms-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	transition: all linear 0.5s;
 	background: url(../img/bookLeft.png) no-repeat;
 	background-size: 479.26px 483.33px;
 	background-position: 20.74px 8.3px;
