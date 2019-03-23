@@ -79,7 +79,7 @@ body{
 	-moz-transition: all linear 0.5s;
 	-ms-transition: all linear 0.5s;
 	-o-transition: all linear 0.5s;
-	transition: all linear 0.5s;
+	transition: all linear 3.5s;
 	background: url(../img/bookLeft.png) no-repeat;
 	background-size: 479.26px 483.33px;
 	background-position: 20.74px 8.3px;
