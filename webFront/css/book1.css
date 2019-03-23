@@ -50,6 +50,7 @@ html{
 	transition: all linear 10s; */
 	background: url(../img/bookBg.png) no-repeat;
 	background-size: 100% 100%;
+	overflow: hidden;
 	display:none;
 }
 .Leftpage{
@@ -68,8 +69,6 @@ html{
 	width: 450px;	
 }
 .Rightpage{
-	/* position: relative;
-	float:right; */
 	position: absolute;
 	width: 500px;
 	height: 500px;

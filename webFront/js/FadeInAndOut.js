@@ -1,4 +1,9 @@
 $(function(){
+	for(var i = 1; i < $('.Rightpage').length; i++){
+		$('.Rightpage').eq(i).hide(); 
+	}
+
+
      $('#cover').click(function(){
 		   $('#cover').fadeOut(1000);
 		  setTimeout(() => {
@@ -16,7 +21,7 @@ $(function(){
 	 $('#submit').click(function(){
 		$.ajax({
 			type:"POST",
-			url: "RequestData.ashx",
+			url: "http://localhost:8080",
 			contentType: "application/json; charset=utf-8",
 			data: GetJsonData(),
 			dataType: "json",
@@ -31,16 +36,30 @@ $(function(){
 
 		})
 	  $('.Rightpage').eq(0).addClass('runclass');
+	  
 	  setTimeout(() => {
 		  $('.SubmitArea').hide();
-		  $('.Rightpage').eq(1).addClass('runclass');
+		  $('.Rightpage').show();
+		  
 	  }, 1000);
 	  setTimeout(() => {
 		  $('.bookPage').eq(0).hide();
+		  $('.Rightpage').eq(1).addClass('runclass');
 		  $('.bookPage').eq(1).show();
-		  
 	  }, 2000);
-	 
+	  
+	  setTimeout(() => {
+		$('.Rightpage').eq(2).addClass('runclass');
+	}, 2500);
+	  setTimeout(() => {
+		$('.Rightpage').eq(3).addClass('runclass');
+	}, 2750);
+	   setTimeout(() => {
+		$('.Rightpage').eq(4).addClass('runclass');
+	}, 3000);
+	   setTimeout(() => {
+		$('.Rightpage').eq(5).addClass('runclass');
+	}, 3250);
 	});
 
 
