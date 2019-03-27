@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<script src="{{url_for('static',filename='js/jquery-.js')}}"></script>
+<!--Json-->
+<script>
+     var data={
+         "name":"test",
+         "age":1
+     }
+    $.ajax({
+        url:'http://127.0.0.1:5000/sendDate',
+        data:JSON.stringify(data),
+        contentType:'application/json;charset=UTF-8',
+        type:'post',
+        dataType:'json',
+        success:function (data) {
+            alert(data['errmsg'])
+
+        },
+        error:function (xhr,type) {
+            alert('异常')
+        }
+
+    });
+</script>
+    <title>Title</title>
+</head>
+<body>
+this is a test
+</body>
+</html>

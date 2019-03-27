@@ -1,0 +1,98 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	color: #333;
+	font-family: "Microsoft YaHei";
+}
+html{
+	background: #009936;
+}
+.bookBox{
+	width: 1000px;
+	height: 500px;
+	position: relative;			
+	margin: 115px auto;
+	-webkit-perspective-origin: 50% 60%;
+	perspective-origin: 50% 60%;
+	-webkit-perspective: 1500px;
+	perspective: 1500px;
+	background-size: 100% 100%;
+	/* background: #0099cc; */
+}
+#knowledge{
+	width: 100%;
+	position: relative;
+	padding: 40px -20px 127px 0px;
+	z-index: 10;
+}
+#cover{
+	padding-top: 20%;
+	width: 100%;
+	height: 40%;
+    /*   此处自移动50% */
+	/* transition: all linear 0.5s; */
+	cursor: pointer;
+}
+.front{
+	display:inline-block;
+	line-height: 100%;
+	font-size: 62px;
+	margin-right: 32px;
+	font-family: "微软雅黑","宋体",Arial;
+	color:#99cc99
+}
+.bookPage{
+	width: 100%;
+	height: 100%;
+	margin-top: 20px;		
+	/* transform-style: preserve-3d;			
+	transition: all linear 10s; */
+	background: url(http://127.0.0.1:5000/static/bookBg.png) no-repeat 0 0 ;
+	background-size: 100% 100%;
+	overflow: hidden;
+	display:none;
+}
+.Leftpage{
+	width: 50%;
+	height: 100%;
+	float:left;
+	background: url(http://127.0.0.1:5000/static/bookLeft.png) no-repeat;
+	background-size: 479.26px 483.33px;
+	background-position: 20.74px 8.3px;
+}
+.Leftpage img{
+	position: absolute;
+	top: 24px;
+	left: 35px;	
+	display: inline-block;
+	width: 450px;	
+}
+.Rightpage{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	left: 50%;
+	top: 0;
+    width: 50%;
+	height: 100%;
+	transform-style: preserve-3d;
+	perspective: 1500px;
+	perspective-origin: 50% 100%;
+	transform-origin: 0 0;
+	transition: all linear 2s;
+	background: url(http://127.0.0.1:5000/static/bookRight.png) no-repeat;
+	background-size: 479.26px 483.33px;
+	background-position: 0px 8.3px;
+}
+#SubmitArea{
+	position: absolute;
+	top: 24px;
+	left: 25px;	
+	display: inline-block;
+	width: 450px;
+	height: 450px;
+}
+.runclass{
+	transform: rotateY(-180deg);
+}

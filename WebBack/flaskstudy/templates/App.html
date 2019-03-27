@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" /> 
+	<title>翻书</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='book2.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bubble.css')}}">
+
+	<script type="text/javascript" src="{{url_for('static', filename='jquery.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='book.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='FadeInAndOut33.js')}}"></script>
+</head>
+<body>
+		<div class="controls">
+				<label class="controls__label">Number of circles</label>
+				<input class="controls__slider" data-slider type="range" min="100" max="500" step="1" value="300" />
+		</div>
+	<div id="knowledge">
+		<div class="bookBox">
+			<div id = "cover">
+				<span class='front'>见多识广</span>
+				<span class='front'>鉴你所见</span>
+			</div>
+			<!-- Page页 书的目录 -->
+			<div class="bookPage"  style="z-index:19" >
+			       <div class="Leftpage">
+					   <img src="{{url_for('static', filename='dataImg1.png')}}" alt="">
+				   </div>
+			       <div class="Rightpage">
+                         <form id="SubmitArea">
+							   <span>请选择一个图像文件:</span>
+							    <input type="file" name="file" id="pic_selector"/>
+                                <button id='submit' type="button">提交</button>
+						 </form>
+					</div>
+			</div>
+			<!-- 2 -->
+			<div class="Rightpage" style="z-index:5"></div>
+			<!-- 3 -->
+			<div class="Rightpage" style="z-index:4"></div>
+			<!-- 4 -->
+			<div class="Rightpage" style="z-index:3"></div>
+			<!-- 5 -->
+			<div class="Rightpage" style="z-index:2"></div>
+			<!-- 6 -->
+			<div class="bookPage">
+				<div class="Leftpage">
+                    <img id="imgContent" display="none">
+				</div>
+				<div class="Rightpage">
+					  <div class="showarea">
+							
+					  </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="{{url_for('static', filename='bubble.js')}}"></script>
+</body>
+</html>

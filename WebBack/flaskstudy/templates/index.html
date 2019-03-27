@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>echarts</title>
+     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='test1.css')}}">
+</head>
+
+<body>
+    <div class="bookBox">12312312</div>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+	<script>
+        $.ajax({
+        type:"post",
+            url: "http://127.0.0.1:5000/testpost",
+			contentType: "application/json; charset=utf-8",
+        success: function (data) {
+            console.log(1);
+            console.log(data)
+          },
+          error: function (message) {
+				console.log(0);
+				console.log(message)
+				// $("#request-process-patent").html("提交数据失败！");
+			}
+        })
+
+	</script>
+
+</body>
+
+</html>
